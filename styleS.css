@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content{
+    margin-left:400px;
+    width:70% ;
+    position: absolute;
+    top:20%;
+    left:50%
+    transform: translate(-50%,-50%);
+    display: flex;
+}
+
+.container{
+    margin-left: 300px;
+    position: relative;
+    min-height: 100vh;
+}
+
+.bg{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.bg::after{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://www.nj.com/resizer/v2/3SXWWWMOH5HMHEVX2EKSBDPPX4.png?auth=11281d22a133bb5744720a7feb2086bcb79b34670501c3426ce4d2816dd0ae49&width=500&quality=90');
+    z-index:-1;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(45%);
+}
+
+.content .header, .grid-card{
+    width:50%;
+}
+.content .header{
+    color:#fff;
+}
+.content .header h3{
+    font-size: 5.5rem;
+}
+.grid-card{
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-gap:100px;
+}
+
+.grid-card .box{
+    width:100%;
+    height:230px;
+    background-position:center;
+    background-size:cover;
+    border-radius: 25px;
+    transition: 0.4s;
+    position: relative;
+}
+
+.content .grid-card  h2 a{
+    text-decoration: none;
+    color: black;
+}
+
+.bg1{
+    background-image:url('https://www.chillpainai.com/src/wewakeup/scoop/images/4aabbb7221a769a95c314e51349f7c7a152a6816.jpg');
+}
+
+.bg2{
+    background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbqDn4Ql7h256q2gitozgB-ZLNfRcXecslKw&s');
+}
+
+.bg3{
+    background-image:url('https://s.isanook.com/tr/0/ud/288/1442071/372830588_6567041750043726_73.jpg?ip/resize/w728/q80/jpg');
+}
+
+.bg4{
+    background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOBmq5lISfJ1aLu_lInUgpiAGW5trnnUzbYQ&s');
+}
+
+.content .box h2{
+    position: absolute;
+    bottom: 10px;
+    left:65px;
+
+}
+
+.content .box:hover{
+    transform: translateY(-15px);
+}
+
+Lside {
+    background-color: #333;
+    padding:2rem;
+    height:100dvh;
+    width:300px;
+    position:fixed;
+}
+
+Lside ul {
+    list-style: none;
+}
+
+Lside ul li{
+    margin: 2rem 0;
+}
+
+Lside ul li a{
+    text-decoration: none;
+    color: #fff;
+
+}

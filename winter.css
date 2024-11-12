@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content{
+    margin-left:400px;
+    width:70% ;
+    position: absolute;
+    top:20%;
+    left:50%
+    transform: translate(-50%,-50%);
+    display: flex;
+}
+
+.container{
+    margin-left: 300px;
+    position: relative;
+    min-height: 100vh;
+}
+
+.bg{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.bg::after{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://www.charnveeresortkhaoyai.com/wp-content/uploads/2022/05/3-7-1-1024x683.jpg');
+    z-index:-1;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(45%);
+}
+
+.content .header, .grid-card{
+    width:50%;
+}
+.content .header{
+    color:#fff;
+}
+.content .header h3{
+    font-size: 5.5rem;
+}
+.grid-card{
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-gap:100px;
+}
+
+.grid-card .box{
+    width:100%;
+    height:230px;
+    background-position:center;
+    background-size:cover;
+    border-radius: 25px;
+    transition: 0.4s;
+    position: relative;
+}
+
+.content .grid-card  h2 a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.bg1{
+    background-image:url('https://www.charnveeresortkhaoyai.com/wp-content/uploads/2023/05/Rancho-apr-10-4.jpg');
+}
+
+.bg2{
+    background-image:url('https://cbtthailand.dasta.or.th/upload-file-api/Resources/RelateAttraction/Images/RAT250060/2.jpeg');
+}
+
+.bg3{
+    background-image:url('https://www.dasta.or.th/uploads/article/202107/1625238812_bf3b710888a73246b84a.jpg');
+}
+
+.bg4{
+    background-image:url('https://nps.dnp.go.th/img/np113s1t1p1n10e.jpg');
+}
+
+.content .box h2{
+    position: absolute;
+    bottom: 10px;
+    left:65px;
+
+}
+
+.content .box:hover{
+    transform: translateY(-15px);
+}
+
+Lside {
+    background-color: #333;
+    padding:2rem;
+    height:100dvh;
+    width:300px;
+    position:fixed;
+}
+
+Lside ul {
+    list-style: none;
+}
+
+Lside ul li{
+    margin: 2rem 0;
+}
+
+Lside ul li a{
+    text-decoration: none;
+    color: #fff;
+
+}

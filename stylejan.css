@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content { 
+    margin : 1em;
+    display: grid;
+    grid-template-columns: 1fr 700px;
+    grid-gap: 1em;
+
+    .content_left{
+        width:100%;
+    }
+
+    .content_right{
+        padding: 2em 0;
+        width:100%;
+        h1{
+            margin-bottom:  .5em;
+            font-size: 3.2em;
+            color: darkblue;
+        }
+
+        p{
+            margin-bottom: 1em;
+        }
+        
+        .gallery{
+            display: grid;
+            height: 100px;
+            grid-template-columns: repeat(1,1fr);
+            grid-gap: .5em;
+
+            img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}
